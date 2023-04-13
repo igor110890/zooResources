@@ -1,4 +1,4 @@
-package com.example.zooResources.model.enums;
+package com.example.zooResources.entity.enums;
 
 public enum AnimalsView {
 

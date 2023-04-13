@@ -1,7 +1,7 @@
-package com.example.zooResources.model;
+package com.example.zooResources.entity;
 
-import com.example.zooResources.model.enums.ProductsType;
-import com.example.zooResources.model.enums.ProductsUnitMeasurement;
+import com.example.zooResources.entity.enums.ProductsType;
+import com.example.zooResources.entity.enums.ProductsUnitMeasurement;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

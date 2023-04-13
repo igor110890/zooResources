@@ -1,4 +1,4 @@
-package com.example.zooResources.model;
+package com.example.zooResources.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

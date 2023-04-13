@@ -1,7 +1,7 @@
-package com.example.zooResources.model;
+package com.example.zooResources.entity;
 
-import com.example.zooResources.model.enums.AnimalsSignPredator;
-import com.example.zooResources.model.enums.AnimalsView;
+import com.example.zooResources.entity.enums.AnimalsSignPredator;
+import com.example.zooResources.entity.enums.AnimalsView;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -31,7 +31,4 @@ public class Animals {
     @Column(name = "signPredator")
     @Enumerated(EnumType.STRING)
     private AnimalsSignPredator signPredator;
-
-    @OneToMany(mappedBy = "animals")
-    Set<DailyFoodAllowance> dailyFoodAllowance;
 }
