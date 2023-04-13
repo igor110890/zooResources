@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <changeSet id="002-create-products-table.xml" author="v002">
+        <comment>
+            Создание таблицы products
+        </comment>
+        <sql>
+            create table products
+            (
+                id               bigint not null auto_increment,
+                name_products    varchar(255),
+                current_quantity varchar(255),
+                unit_measurement varchar(255),
+                type             varchar(255),
+                primary key (id)
+            ) </sql>
+    </changeSet>
+</databaseChangeLog>

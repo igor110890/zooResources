@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+    <include file="v-1.0/001-create-animals-table.xml" relativeToChangelogFile="true"/>
+    <include file="v-1.0/002-create-products-table.xml" relativeToChangelogFile="true"/>
+    <include file="v-1.0/003-create-dailyFoodAllowance-table.xml" relativeToChangelogFile="true"/>
+    <include file="v-1.0/004-insert-animals-table.xml" relativeToChangelogFile="true"/>
+    <include file="v-1.0/005-insert-products-table.xml" relativeToChangelogFile="true"/>
+    <include file="v-1.0/006-insert-dailyFoodAllowance-table.xml" relativeToChangelogFile="true"/>
+</databaseChangeLog>

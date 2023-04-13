@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <changeSet id="005-insert-products-table.xml" author="v005">
+        <comment>
+            Заполнение таблицы products
+        </comment>
+        <sql>
+            INSERT INTO products (id, name_products, current_quantity, unit_measurement, type)
+                VALUE (1, 'Морковь', 70, 'PIECES', 'VEGETABLE');
+            INSERT INTO products (id, name_products, current_quantity, unit_measurement, type)
+                VALUE (2,'Мясо', 20, 'KILOGRAM', 'MEAT');
+            INSERT INTO products (id, name_products, current_quantity, unit_measurement, type)
+                VALUE (3, 'Капуста ', 80, 'PIECES', 'VEGETABLE');
+            INSERT INTO products (id, name_products, current_quantity, unit_measurement, type)
+                VALUE (4, 'Банан ', 40, 'PIECES', 'FRUIT');
+            INSERT INTO products (id, name_products, current_quantity, unit_measurement, type)
+                VALUE (5, 'Яблоко ', 0, 'PIECES', 'FRUIT');
+            INSERT INTO products (id, name_products, current_quantity, unit_measurement, type)
+                VALUE (6, 'Зерно ', 600, 'KILOGRAM', 'VEGETABLE');
+            INSERT INTO products (id, name_products, current_quantity, unit_measurement, type)
+                VALUE (7, 'Вода ', 180, 'LITER', 'LIQUID');
+        </sql>
+    </changeSet>
+</databaseChangeLog>

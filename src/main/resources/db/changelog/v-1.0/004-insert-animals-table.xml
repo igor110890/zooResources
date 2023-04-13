@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <changeSet id="004-insert-animals-table.xml" author="v004">
+        <comment>
+            Заполнение таблицы animals
+        </comment>
+        <sql>
+            INSERT INTO animals (id, name, view, sign_predator)
+            VALUES (1, 'Обезьяна', 'A_MAMMAL', 'YES');
+            INSERT INTO animals (id, name, view, sign_predator)
+            VALUES (2, 'Заяц', 'A_MAMMAL', 'NO');
+            INSERT INTO animals (id, name, view, sign_predator)
+            VALUES (3, 'Орел', 'BIRD', 'YES');
+            INSERT INTO animals (id, name, view, sign_predator)
+            VALUES (4, 'Тигр', 'A_MAMMAL', 'YES');
+            INSERT INTO animals (id, name, view, sign_predator)
+            VALUES (5, 'Лошадь', 'A_MAMMAL', 'NO');
+        </sql>
+    </changeSet>
+</databaseChangeLog>
